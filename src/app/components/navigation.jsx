@@ -35,10 +35,8 @@ const NavigationBar = () => {
     return(
         <div className="w-full px-[16px] md:px-[20px] py-[24px] bg-[#000] md:relative ">
         <nav className="bg-[#fff] rounded-[8px] shadow-[0px_4px_12.6px_0px_#D2D2D21F] tracking-[3%] leading-[150%] md:max-w-[1248px] mx-auto h-[48px] md:h-[88px] flex justify-between items-center md:px-[32px]">
-           <Link href="/">
-            <div className="relative w-[50px] h-[50px] bg-[#fff]">
-              <Image src="/img/logo.png" fill alt="kwechiri logo" className="bg-[#fff] " />
-             </div>
+           <Link href="/" className="tracking-[5px] font-[700] libertinus-keyboard-regular text-[26px]">
+            CHIAKA
              </Link>
 
              <div className="hidden md:flex justify-between space-x-[40px] text-[16px] text-[#354764]  items-center">

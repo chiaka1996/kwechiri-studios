@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
         {/* Brand Section */}
         <div>
-          <h2 className="text-2xl font-bold text-white mb-3">Kwechiri</h2>
+          <h2 className="text-2xl font-bold text-white mb-3 libertinus-keyboard-regular tracking-[5px]">CHIAKA</h2>
           <p className="text-sm leading-relaxed text-gray-400">
             We blend design, technology, and strategy to build digital solutions
             that help businesses grow and connect with their audience.

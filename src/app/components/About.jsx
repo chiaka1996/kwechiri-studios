@@ -10,9 +10,9 @@ const AboutSection = () => {
 
                 <div className="space-y-[20px] w-full md:w-[548px]">
                 <div>
-                <h2 className="text-[#000] font-[700] text-[32px] tracking-[3px]">ABOUT KWECHIRI</h2>
+                <h2 className="text-[#000] font-[700] text-[32px] ">ABOUT <span className="tracking-[5px] libertinus-keyboard-regular">CHIAKA</span></h2>
                 <p>
-                Kwechiri is a forward-thinking tech and creative agency committed to helping brands grow through 
+                We are a forward-thinking tech and creative agency committed to helping brands grow through 
                 digital innovation. We specialize in web design, branding, 
                 and custom tech solutions that empower businesses to stand out and scale with confidence.
                 </p>
@@ -21,7 +21,7 @@ const AboutSection = () => {
                 <h3 className="text-[#000] font-[700] text-[22px]">Our Mission</h3>
                 <p>
                 Our mission is to bridge creativity and technology, delivering solutions that not only 
-                look great but also drive measurable results. At Kwechiri, 
+                look great but also drive measurable results. At <span className="tracking-[5px] libertinus-keyboard-regular">CHIAKA</span>, 
                 we believe every brand deserves a strong digital presence that inspires action and builds trust.
                 </p>
                 </div>

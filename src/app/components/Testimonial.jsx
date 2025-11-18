@@ -8,7 +8,7 @@ const testimonials = [
       name: "Chiamaka Okeke",
       title: "Founder, EduPlus",
       quote:
-        "Kwechiri transformed our website completely. The design is sleek, fast, and has helped us attract more customers online.",
+        "CHIAKA transformed our website completely. The design is sleek, fast, and has helped us attract more customers online.",
     },
     {
       name: "Tunde Adebayo",
@@ -20,7 +20,7 @@ const testimonials = [
       name: "Adaobi Eze",
       title: "CRM Manager, FinEdge",
       quote:
-        "The Salesforce setup by Kwechiri has streamlined our workflow and made our data management effortless. Highly recommended!",
+        "The Salesforce setup by CHIAKA has streamlined our workflow and made our data management effortless. Highly recommended!",
     },
   ];
 
