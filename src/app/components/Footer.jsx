@@ -1,11 +1,12 @@
 'use client'
 import Link from "next/link";
-import { Facebook, Twitter, Linkedin, Mail } from "lucide-react";
+import { Facebook, Twitter, Linkedin, Mail, Instagram, Tiktok } from "lucide-react";
+
 
 const Footer = () => {
     return (
-         <footer className="bg-[#0F3D3E] text-gray-300 py-14 px-8">
-      <div className="max-w-6xl mx-auto grid md:grid-cols-4 gap-10">
+         <footer className="bg-[#0F3D3E] text-gray-300 py-14 px-[16px]">
+      <div className="max-w-[1248px] mx-auto grid md:grid-cols-4 gap-10">
         {/* Brand Section */}
         <div>
           <h2 className="text-2xl font-bold text-white mb-3 libertinus-keyboard-regular tracking-[5px]">CHIAKA</h2>
@@ -16,8 +17,8 @@ const Footer = () => {
         </div>
 
         {/* Quick Links */}
-        <div>
-          <h3 className="text-lg font-semibold text-white mb-3">
+        <div className="">
+          <h3 className="text-lg font-semibold text-white mb-3 ">
             Quick Links
           </h3>
           <ul className="space-y-2">
@@ -45,7 +46,7 @@ const Footer = () => {
         </div>
 
         {/* Services */}
-        <div>
+        <div className="">
           <h3 className="text-lg font-semibold text-white mb-3">Services</h3>
           <ul className="space-y-2">
             <li>Website Design</li>

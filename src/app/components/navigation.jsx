@@ -34,10 +34,8 @@ const NavigationBar = () => {
 
     return(
         <div className="w-full px-[16px] md:px-[20px] py-[24px] bg-[#000] md:relative ">
-        <nav className="bg-[#fff] rounded-[8px] shadow-[0px_4px_12.6px_0px_#D2D2D21F] tracking-[3%] leading-[150%] md:max-w-[1248px] mx-auto h-[48px] md:h-[88px] flex justify-between items-center md:px-[32px]">
-           <Link href="/" className="tracking-[5px] font-[700] libertinus-keyboard-regular text-[26px]">
-            CHIAKA
-             </Link>
+        <nav className="bg-[#fff] rounded-[8px] shadow-[0px_4px_12.6px_0px_#D2D2D21F] tracking-[3%] leading-[150%] md:max-w-[1248px] mx-auto h-[48px] md:h-[88px] flex justify-between items-center px-[10px] md:px-[32px]">
+           <Link href="/" className="tracking-[5px] font-[700] libertinus-keyboard-regular text-[30px] md:text-[36px]"> C </Link>
 
              <div className="hidden md:flex justify-between space-x-[40px] text-[16px] text-[#354764]  items-center">
                <Link href="/"  className={`navLink ${pathname==="/" ? "text-[#087C72] font-[600]" : ""}`}>Home</Link>

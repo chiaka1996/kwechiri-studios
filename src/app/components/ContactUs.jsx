@@ -1,26 +1,70 @@
 "use client";
 import { useState } from "react";
+import { Toaster, toast } from "react-hot-toast";
 
 const ContactUs = () => {
-      const [formData, setFormData] = useState({
+    const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
+  const [errorMessage, setErrorMessage] = useState("")
+  const [loading, setLoading] = useState("");
 
-  const [status, setStatus] = useState("");
+  console.log(errorMessage)
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setStatus("Sending...");
-  }
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+     const onSubmitForm = async (e) => {
+        try{
+        e.preventDefault();
+        setLoading(true)
+        const {name, email, message} = formData;
+
+        if(!name || !email || !message){
+            setLoading(false)
+            return toast.error("please, fill all required fields")
+        }
+        if (!emailRegex.test(email)) {
+            setLoading(false)
+             return toast.error("Invalid Email")
+        }
+      
+
+         const res = await fetch("/api/contactusform", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(formData),
+            });
+
+            const responseData = await res.json();
+            if(responseData.success){
+                 setLoading(false)
+                  toast.success("message sent successfully")
+                  setFormData({
+                    name: "",
+                    email: "",
+                    message: ""
+                    })
+            }
+            else{
+                 setLoading(false)
+                toast.error("something went wrong, please try again")
+            }
+        }
+        catch(err){
+            setLoading(false)
+            toast.error("something went wrong, please try again")
+        }
+    }
 
     return(
         <section className="py-[50px] xl:py-[100px] px-[16px] xl:px-0 bg-[#f2f2f2]" id="contact">
+          <Toaster />
       <div className="max-w-[1248px] mx-auto text-center">
         <h2 className="text-[45px] md:text-[55px] font-[700] mb-3 md:mb-6">Get in Touch</h2>
         <p className="mb-4 md:mb-12 max-w-[1000px] mx-auto">
@@ -29,7 +73,7 @@ const ContactUs = () => {
         </p>
 
         <form
-          onSubmit={handleSubmit}
+          onSubmit={onSubmitForm}
           className="p-0 md:p-8 rounded-2xl w-full md:max-w-2xl mx-auto text-left"
         >
           <div className="mb-6">
@@ -73,20 +117,17 @@ const ContactUs = () => {
               value={formData.message}
               onChange={handleChange}
               required
-              className="outline-none w-full p-3 rounded-md border border-[#000] text-gray-200 focus:outline-none"
+              className="outline-none w-full p-3 rounded-md border border-[#000] text-[#000] focus:outline-none"
             ></textarea>
           </div>
 
           <button
             type="submit"
-            className="bg-[#107269] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#17a74b] transition w-full"
+            className="cursor-pointer bg-[#107269] text-white font-semibold px-6 py-3 rounded-md hover:bg-[#000] transition w-full"
           >
-            Send Message
+            {loading ? "Sending..." : "Send Message"}
           </button>
 
-          {status && (
-            <p className="mt-4 text-center text-sm text-gray-300">{status}</p>
-          )}
         </form>
       </div>
     </section>
