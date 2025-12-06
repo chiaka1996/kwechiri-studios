@@ -27,6 +27,34 @@ export default function OurProjects() {
     },
   ];
 
+  const graphicsProject = [
+    {
+      title: "OMK Brand Design",
+      images: [
+        "https://res.cloudinary.com/chiaka/image/upload/v1763556501/OMK2024rebrandTAGS_qlxxuo.jpg",
+        "https://res.cloudinary.com/chiaka/image/upload/v1763556505/OMK2024rebrandCollage_edoavn.jpg",
+        "https://res.cloudinary.com/chiaka/image/upload/v1763556505/OMK2024rebrandWPP_s6eza3.jpg"
+      ]
+    },
+    {
+      title: "ARIK Brand Design",
+      images: [
+        "https://res.cloudinary.com/chiaka/image/upload/v1763556747/Ariklogo1WhtRed_wqsg56.jpg",
+        "https://res.cloudinary.com/chiaka/image/upload/v1763556747/Arikflyers_hxknm3.jpg",
+        "https://res.cloudinary.com/chiaka/image/upload/v1763556749/ArikTourist_d1tiaq.jpg",
+        "https://res.cloudinary.com/chiaka/image/upload/v1763556749/ArikToteBag_rrwvpa.png"
+      ]
+    },
+    {
+      title: "Qara Kitchen Brand Design",
+      images: [
+        "https://res.cloudinary.com/chiaka/image/upload/v1763556559/M_bw1eny.jpg",
+        "https://res.cloudinary.com/chiaka/image/upload/v1763556402/QARAAPRON2_oazlc3.jpg",
+        "https://res.cloudinary.com/chiaka/image/upload/v1763556402/QARAAPRON2_oazlc3.jpg"
+      ]
+    }
+  ]
+
   useEffect(() => {
     cardsRef.current.forEach((card) => {
       gsap.fromTo(
@@ -81,7 +109,28 @@ export default function OurProjects() {
           </div>
 
         ))}
+         {graphicsProject.map((project, index) => (
+          <div
+            ref={(el) => (cardsRef.current[index] = el)}
+            key={index}
+            className="bg-[#F2F2F2] rounded-2xl shadow-lg overflow-hidden"
+          >
+            <div className="w-full h-56">
+              <img
+                src={project.images[0]}
+                alt={project.title}
+                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500 bg-center"
+              />
+            </div>
+            <div className="p-6 text-left">
+              <h3 className="text-xl font-semibold mb-2 text-[#000]">
+                {project.title}
+              </h3>
+            </div>
+          </div>
+        ))}
       </div>
+      
        </div>
     </section>
   );
