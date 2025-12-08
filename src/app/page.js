@@ -20,7 +20,7 @@ export default function Home() {
         <div className="space-y-[15px] lg:space-y-[20px]">
           <h1 className="text-[#A8E6CF]"><span className="tracking-[5px] libertinus-keyboard-regular">CHIAKA</span> - IT solutions for the new era</h1>
           <h2 className="text-[#E5E5E5] font-[700] text-[45px]  md:text-[55px] leading-[120%] max-w-[800px]">Building Digital Experiences That Drives Growth</h2>
-          <p className="max-w-[500px] text-[#fff]/70 text-[18px]">At Kwechiri, we design, develop, and deliver innovative web and tech solutions that help brands scale</p>
+          <p className="max-w-[500px] text-[#fff]/70 text-[18px]">At <span className="libertinus-keyboard-regular">CHIAKA</span>, we design, develop, and deliver innovative web and tech solutions that help brands scale</p>
             <button className="block w-[200px] h-[47px] bg-[#107269] text-[#fff] rounded-[16px] cursor-pointer">Read more</button>
         </div>
         <div className="w-full lg:w-[700px] h-[300px] md:h-[400px] relative rounded-[10px]">
