@@ -1,5 +1,6 @@
 'use client'
 import Link from "next/link";
+import { FaTiktok } from "react-icons/fa";
 import { Facebook, Twitter, Linkedin, Mail, Instagram, Tiktok } from "lucide-react";
 
 
@@ -62,16 +63,16 @@ const Footer = () => {
             Let&apos;s build something amazing together.
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="hover:text-[#1DB954]">
+            <a href="https://web.facebook.com/profile.php?id=61584523089559" target="_blank" className="hover:text-[#1DB954]">
               <Facebook size={20} />
             </a>
-            <a href="#" className="hover:text-[#1DB954]">
-              <Twitter size={20} />
+            <a href="https://www.instagram.com/chiakatech/" target="_blank" className="hover:text-[#1DB954]">
+              <Instagram size={20} />
             </a>
-            <a href="#" className="hover:text-[#1DB954]">
-              <Linkedin size={20} />
+            <a href="https://www.tiktok.com/@chiaka_tech?_r=1&_t=ZS-922qJRd8UOf" target="_blank" className="hover:text-[#1DB954]">
+             <FaTiktok className="w-[20] h-[20]" />
             </a>
-            <a href="mailto:hello@kwechiri.com" className="hover:text-[#1DB954]">
+            <a href="mailto:contact@chiakatech.xyz" target="_blank" className="hover:text-[#1DB954]">
               <Mail size={20} />
             </a>
           </div>
@@ -81,7 +82,7 @@ const Footer = () => {
       {/* Bottom Section */}
       <div className="border-t border-gray-700 mt-10 pt-6 text-center text-sm text-gray-400">
         <p>
-          © {new Date().getFullYear()} Kwechiri. All rights reserved.{" "}
+          © {new Date().getFullYear()} <span className="libertinus-keyboard-regular">CHIAKA</span>. All rights reserved.{" "}
           <span className="text-[#1DB954]">Innovate. Design. Scale.</span>
         </p>
       </div>

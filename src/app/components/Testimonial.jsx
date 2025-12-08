@@ -5,20 +5,20 @@ import { Pagination, Autoplay } from "swiper/modules";
 
 const testimonials = [
     {
-      name: "Chiamaka Okeke",
-      title: "Founder, EduPlus",
+      name: "Lanre Olarewanju",
+      title: "C.E.O Slumtech Foundation",
       quote:
         "CHIAKA transformed our website completely. The design is sleek, fast, and has helped us attract more customers online.",
     },
     {
-      name: "Tunde Adebayo",
-      title: "Marketing Director, HealthSync",
+      name: "Adekola Mustapha",
+      title: "C.EO ZZAR LOGISTICS",
       quote:
         "Their branding and website strategy gave our company a new identity. The team was professional, responsive, and creative.",
     },
     {
-      name: "Adaobi Eze",
-      title: "CRM Manager, FinEdge",
+      name: "Osuji Blessing",
+      title: "C.E.O ENGLISH LAB CONSULTANCY",
       quote:
         "The Salesforce setup by CHIAKA has streamlined our workflow and made our data management effortless. Highly recommended!",
     },

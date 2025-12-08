@@ -32,8 +32,8 @@ const clashDisplay = localFont({
 });
 
 export const metadata = {
-  title: "kwechiri Studios",
-  description: "Kwechiri Studios is a creative branding agency offering logo design, web design, and digital marketing. We help businesses stand strong with bold, strategic brand identities.",
+  title: "Chiaka tech",
+  description: "Chiaka tech a creative branding agency offering logo design, web design and digital marketing. We help businesses stand strong with bold, strategic brand identities.",
 };
 
 export default function RootLayout({ children }) {
