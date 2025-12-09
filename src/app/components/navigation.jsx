@@ -53,7 +53,7 @@ const NavigationBar = () => {
                   <Link href="/#contact">
                  <Button name="Contact Us" classname="w-[101px] h-[47px] md:w-[141px] bg-[#107269] hidden md:block"/>
                   </Link>
-                <div className="relative w-[24px] h-[24px]" onClick={toggleMobileNavbarFunction} >
+                <div className="relative w-[24px] h-[24px] md:hidden" onClick={toggleMobileNavbarFunction} >
                      <Menu size={20} className="text-[#000]"/>
                 </div>
                 </div>
