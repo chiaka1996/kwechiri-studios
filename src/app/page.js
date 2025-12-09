@@ -8,6 +8,7 @@ import ContactUs from "./components/ContactUs";
 import OurProjects from "./components/OurProjects";
 import Footer from "./components/Footer";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -21,7 +22,9 @@ export default function Home() {
           <h1 className="text-[#A8E6CF]"><span className="tracking-[5px] libertinus-keyboard-regular">CHIAKA</span> - IT solutions for the new era</h1>
           <h2 className="text-[#E5E5E5] font-[700] text-[45px]  md:text-[55px] leading-[120%] max-w-[800px]">Building Digital Experiences That Drives Growth</h2>
           <p className="max-w-[500px] text-[#fff]/70 text-[18px]">At <span className="libertinus-keyboard-regular">CHIAKA</span>, we design, develop, and deliver innovative web and tech solutions that help brands scale</p>
+            <Link href="/#about">
             <button className="block w-[200px] h-[47px] bg-[#107269] text-[#fff] rounded-[16px] cursor-pointer">Read more</button>
+            </Link>
         </div>
         <div className="w-full lg:w-[700px] h-[300px] md:h-[400px] relative rounded-[10px]">
           <Image src="https://res.cloudinary.com/chiaka/image/upload/v1762513809/ChatGPT_Image_Nov_7_2025_12_09_41_PM_iontsp.png" className="rounded-[10px]" fill alt="web design, graphic design, salesforce" />
