@@ -5,6 +5,8 @@ import Link from "next/link";
 import Button from "./Button";
 import { useAllContext } from "../context/allcontext";
 import { usePathname } from "next/navigation";
+import { Menu } from "lucide-react";
+
 
 
 const NavigationBar = () => {
@@ -52,7 +54,7 @@ const NavigationBar = () => {
                  <Button name="Contact Us" classname="w-[101px] h-[47px] md:w-[141px] bg-[#107269] hidden md:block"/>
                   </Link>
                 <div className="relative w-[24px] h-[24px]" onClick={toggleMobileNavbarFunction} >
-                     <Image src="/img/open_menu.png" fill alt="thribe community menu option" className="object-center md:hidden shrink-0" /> 
+                     <Menu size={20} className="text-[#000]"/>
                 </div>
                 </div>
         </nav>
